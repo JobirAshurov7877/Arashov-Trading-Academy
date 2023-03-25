@@ -1,0 +1,106 @@
+.competition{
+width: 100%;
+height: auto;
+background-color: #000b1d;
+padding-top: 80px;
+}
+.competition__title{
+text-align: center;
+font-size: 2.5rem;
+width: 500px;
+margin: auto;
+font-weight: 600;
+background: -webkit-linear-gradient(45deg,#81d7f6, #0028b9);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+.competition-container {
+     height: 80vh;
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center; 
+   }
+   
+   .competition-content {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     max-width: 100%;
+     margin: 0 auto;
+   }
+   
+   .competition-image {
+     margin-top: 1rem;
+     padding-right: 100px;
+   }
+   .competition-image img{
+     width: 500px;
+   }
+   
+   .competition-title {
+     font-size: 3rem;
+     font-weight: bold;
+     text-align: center;
+   }
+   .competition-text{
+     width: 480px;
+   }
+   
+   .competition-description {
+     font-size: 1.6rem;
+     text-align: right;
+     margin-top: 1rem;
+     line-height: 1.5;
+     font-weight: 600;
+     word-spacing: 5px;
+   }
+   .competition-text .note{
+     font-size: .85rem;
+     margin-top: 20px;
+     color: #616161;
+     font-weight: 600;
+   }
+   @media screen and (max-width: 1130px){
+    .competition-content{
+      flex-direction: column;
+      text-align: center;
+    }
+    .competition-description{
+      text-align: center;
+    }
+   }
+   
+   @media screen and (max-width: 768px) {
+    .competition-container{
+      height: 60vh;
+    }
+    .competition-image{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 0;
+    }
+    .competition-image img{
+      display: block;
+      width: 200px;
+      margin: auto;
+
+    }
+    .competition__title{
+      font-size: 1.4rem;
+      width: 300px;
+    }
+    .competition-description{
+      font-size: 1rem;
+    }
+    .competition-text .note{
+      font-size: 0.7rem;
+    }
+    .competition-text{
+      width: auto;
+    }
+   }
+   

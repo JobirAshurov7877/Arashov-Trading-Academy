@@ -1,0 +1,50 @@
+/* Navbar styling for desktop */
+.navbar {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     height: 80px;
+     padding: 60px ;
+   }
+   
+   .navbar__logo img {
+     height: 50px;
+   }
+   
+   .navbar__buttons button {
+     background: none;
+     color: #fff;
+     padding: 7px 20px;
+     border: none;
+     border-radius: 7px;
+     margin-left: 10px;
+     cursor: pointer;
+     font-size: 1.1rem;
+     font-weight: 600;
+   }
+   .register-button{
+    box-shadow: inset -4px -4px 4px hsla(239, 94%, 75%, 0.3), inset 1px 4px 5px hsla(239, 100%, 78%, 0.3);
+   }
+
+   
+   /* Navbar styling for mobile */
+   @media only screen and (max-width: 600px) {
+     .navbar {
+       flex-direction: column;
+       height: auto;
+       padding: 20px;
+       border-bottom: 1px solid  rgba(247, 247, 247, 0.173);
+     }
+   
+     .navbar__buttons {
+       margin-top: 20px;
+     }
+   
+     .navbar__buttons button {
+       margin: 0 10px;
+       font-size: .9rem;
+       font-weight: 400;
+       
+     }
+   }
+   

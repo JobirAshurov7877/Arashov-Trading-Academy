@@ -1,0 +1,110 @@
+.contact{
+     width: 1200px;
+     border: 6px solid #0076ff;
+     padding: 50px;
+     margin: 250px auto;
+     display: flex;
+     border-radius: 30px;
+     box-shadow: 2px  0px  5px  2px  #529df1;
+     background-color: #000b1d;
+}
+.contact::after{
+     content: '';
+     position: absolute;
+     width: 160px;
+     height: 200px;
+     background-color: #0076ff;
+     filter: blur(100px);
+     margin-top: -27px;
+     margin-left: -25px;
+     z-index: -1;
+}
+.contact::before{
+     content: '';
+     position: absolute;
+     width: 450px;
+     height: 220px;
+     background-color: #0076ff;
+     filter: blur(100px);
+     margin-left: 700px;
+     margin-top: 25px;
+     z-index: -1;
+}
+.contact-image{
+     width: 500px;
+
+}
+.contact-image  img{
+     width: 500px;
+     position: absolute;
+     margin-top: -270px;
+}
+.contact-text{
+     width: 60%;
+}
+.contact-text h2{
+     font-size: 2rem;
+     font-weight: 600;
+}
+.telegram-contact a{
+     width: 420px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     background: linear-gradient(to right,#032cb0,#036ae2);
+     padding: 10px 20px;
+     color: #fff;
+     text-decoration: none;
+     border-radius: 15px;
+     font-weight: 500;
+     margin-top: 20px;
+}
+.telegram-contact p{
+     font-size: 2rem;
+}
+.phone-number{
+     font-size: 1.5rem;
+     margin-top: 15px;
+     font-weight: 600;
+}
+@media screen and (max-width: 1230px){
+     .contact{
+          width: 90%;
+          margin: auto;
+     }
+     .contact-image{
+          display: none;
+     }
+     .contact-text{
+          width: 100%;
+          text-align: center;
+     }
+     .telegram-contact a {
+          margin: auto;
+
+     }
+     .contact::before,
+     .contact::after{
+        display: none;
+     }
+}
+@media screen and (max-width: 600px){
+     .contact{
+          border: 3px solid #0076ff;
+          box-shadow: none;
+          padding: 20px
+          ;
+     }
+     .contact-text h2{
+          font-size: 1rem;
+     }
+     .telegram-contact a{
+          width: 100%;
+          margin-top: 10px;
+     }
+     .telegram-contact p{
+          font-size: 1rem;
+         
+     }
+
+}

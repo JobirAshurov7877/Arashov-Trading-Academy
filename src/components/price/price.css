@@ -1,0 +1,227 @@
+.Price-section{
+  background-color: #000b1d;
+  width: 100%;
+  height: auto;
+}
+.card-container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  
+}
+.card-content{
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-container .card{
+  margin: 0 20px;
+  background-color: #0d182b;
+  border-radius: 20px;
+  box-shadow: inset -3px -5px 3px #13243f;
+  height: 650px;
+  width: 400px;
+}
+.card-container .card:nth-child(4){
+  height: 700px;
+}
+
+.bright1{
+  width: 100px;
+  height: 100px;
+  margin-top: -30px;
+  margin-left: -130px;
+  border-radius: 50%;
+  background-color: #0050ff;
+  filter: blur(50px);
+}
+.card-container .card:nth-child(4) .bright1{
+  background-color: #bca91a;
+  filter: blur(60px);
+
+}
+.card-title{
+  width: 100%;
+  height: 100px;
+  padding: 0 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0c203c;
+  border-radius: 20px  20px  0 0 ;
+  box-shadow: inset -4px  4px  4px #0f2a4f;
+  font-size: 1.5rem;
+  overflow: hidden;
+}
+.card-title  p{
+  text-align: center;
+  padding-left: 30px ;
+}
+.card-description{
+  padding: 35px;
+}
+.card-description li{
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 17px;
+}
+ul {
+  list-style: none;
+  height: auto;
+}
+
+
+ul li::before {
+  content: "\2022";
+  color: #0078fa;
+  font-weight: bold;
+  display: inline-block; 
+  width: 17px;
+  margin-left: -1em;
+  font-size: 20px;
+}
+.card-footer{
+
+  display: grid;
+  place-items: center;
+}
+.card-footer .buy{
+  width: 100%;
+  height: 50px;
+  background-color: #003dff;
+  border-radius: 0px  0px  20px 20px ;
+  box-shadow: inset -4px  4px  4px #0087ff;
+  font-size: 1.3rem;
+  color: #ffff;
+  font-weight: 600;
+  overflow: hidden;
+}
+.card-footer .buy p{
+  text-align: center;
+  margin-top: 10px;
+}
+.card-footer .buy .mask{
+width: 100%;
+height: 100%;
+background-color: #bc9d23;
+margin-top: -15px;
+}
+.card-container .card:nth-child(4) .card-footer .buy{
+  background-color: #fffe59;
+  box-shadow: inset -4px  5px  4px #ffc23e;
+  color: #000;
+}
+.card-price{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.sponsor{
+  width: 1050px;
+  height: 60px;
+  margin-left: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sponsor  img{
+  width: 150px;
+  opacity: 0.1;
+  margin: 0 25px;
+}
+.payment-crypto{
+  width: 300px;
+  height: 100px;
+  border: 4px solid #0076ff;
+  display: grid;
+  place-items: center;
+  margin: 50px auto;
+  text-align: center;
+  border-radius: 20px;
+  padding: 15px;
+}
+.payment-crypto  p{
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.video-course{
+  padding: 0 15px;
+  font-weight: 600;
+  background: -webkit-linear-gradient(45deg,#81d7f6, #0028b9);
+  font-size: .8rem;
+  text-align: center;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.card:nth-child(1) .video-course{
+  box-shadow: inset -4px  4px  4px #142540;
+  width: 85%;
+  margin: auto;
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 15px;
+}
+.card:nth-child(4) .video-course{
+   padding: 0 15px;
+   background: -webkit-linear-gradient(45deg,#f1d902, #f1d902);
+   font-size: .8rem;
+   text-align: center;
+ -webkit-background-clip: text;
+}
+.discount{
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: line-through;
+  color: #616161;
+  margin-top: 30px;
+}
+@media screen and (max-width: 1290px){
+  .card-container{
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+  }
+  .card-container .card{
+    height: auto;
+    margin-bottom: 40px;
+    width: 300px;
+  }
+  .sponsor{
+    width: 100%;
+    margin: 0;
+  }
+  .sponsor  img{
+    width: 50px;
+  }
+}
+@media screen and (max-width: 495px){
+  .card-title {
+    height:60px;
+  }
+  .card:nth-child(1) .video-course{
+    font-size: 1rem;
+    padding: 10px;
+    width: 80%;
+  }
+  .card-price{
+    font-size: 1.2rem;
+  }
+  .card-footer .buy{
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  .sponsor{
+    width: 300px;
+
+    margin: auto;
+  }
+  .sponsor img{
+    width: 30px;
+    margin: 5px;
+  }
+
+}
